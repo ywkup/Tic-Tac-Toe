@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a black background color for the entire page */
+html,body{
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Center align text in the header */
+.header{
+    text-align: center;
+}
+
+/* Styling for the turn indicator */
+#turn{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+/* Styling for the win/lose message */
+#win-lose{
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+    display: none;
+    font-size: 2rem;
+}
+
+/* Styling for the game container */
+.game-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for each row of cells */
+.row1, .row2, .row3 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for each cell */
+#input1, #input2, #input3,
+#input4, #input5, #input6,
+#input7, #input8, #input9 {
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    border: 5px solid white;
+    cursor: pointer;
+}
+
+/* Styling for cell borders */
+#input1, #input4, #input7{
+    border-left: none;
+}
+#input1, #input2, #input3{
+    border-top: none;
+}
+#input3, #input6, #input9{
+    border-right: none;
+}
+#input7,#input8,#input9{
+    border-bottom: none;
+}
+
+/* Styling for the "Play Again" button */
+.trybutton{
+    margin-top: 2rem;
+}
+#tryAgain{
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    border-radius: 1.3rem;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1.4rem 3rem;
+    transition: 0.4s ease-in-out;
+}
+#tryAgain:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
